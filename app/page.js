@@ -118,10 +118,9 @@ export default function Home() {
           <p className=" text-zinc-300 font-normal text-sm">trusted across the globe </p>
         </div>
         <p className=" w-[400px] text-sm md:text-xl">
-          Minimal Mind, more than a name I'm your friendly
-          companion in every endeavor. Expect a blend of reliability and
+          Minimal Mind, more than a name Im your friendlyc companion in every endeavor. Expect a blend of reliability and
           warmth, where your satisfaction is our priority. Join our community
-          for a delightful experience, I'm not just
+          for a delightful experience, Im not just
           building projects; building connections that last.
         </p>
       </div>
