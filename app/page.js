@@ -63,20 +63,20 @@ export default function Home() {
         </div>
       </div>
 
-        <div className="mb-20 bg-gradient-to-tr from-orange-400 to-blue-700 lg:w-[650px] lg:h-[300px] blur-[120px]"></div>
-        <h1 className=" absolute top-1/2 left-1/2 mt-20  -translate-x-1/2 translate-y-1/2 text-5xl lg:w-[550px] text-center font-bold">Boost Your Professional & Online Presence  </h1>
+        <div className="mb-20 bg-gradient-to-tr from-orange-400 to-blue-700 w-[200px] h-[100px] lg:w-[650px] lg:h-[300px] blur-[40px] lg:blur-[120px]"></div>
+        <h1 className=" absolute top-1/2 left-1/2 lg:mt-20 text-xl   -translate-x-1/2 translate-y-1/2 lg:text-5xl lg:w-[550px] text-center font-bold">Boost Your Professional & Online Presence  </h1>
 
-    <div className="mb-20 p-24 border rounded-lg flex flex-col">
+    {/* <div className="mb-20 p-24 border rounded-lg flex flex-col">
       <p>Start with Resume Building</p>
 
-    </div>
+    </div> */}
 
 
       <div className=" flex flex-col gap-8 w-full">
         <p className=" font-semibold text-2xl">Students Pack</p>
         <div className=" flex flex-wrap gap-4 ">
           {projects.slice(0, 2).map((e) => (
-            <Projects title={e.title} desc={e.desc} link={e.link} />
+            <Projects key={e.title} title={e.title} desc={e.desc} link={e.link} />
           ))}
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function Home() {
         <p className=" font-semibold text-2xl">Social Pack</p>
         <div className=" flex flex-wrap gap-4 ">
           {projects.slice(2, 4).map((e) => (
-            <Projects title={e.title} desc={e.desc} link={e.link} />
+            <Projects key={e.title} title={e.title} desc={e.desc} link={e.link} />
           ))}
         </div>
       </div>
